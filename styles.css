@@ -1,0 +1,170 @@
+
+#titleText{
+
+	font-family:Georgia, 'Times New Roman', Times, serif; 
+	font-size:medium;
+	color:rgb(255, 51, 0);
+
+}
+
+
+#commentContainer{
+	padding: 10px;
+	border: 25px;
+	font-size:medium;
+	border-color: blue;
+	
+}
+
+#name{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	text-shadow: 0 0 3px #FF0000;
+	font-size:xx-large;
+	text-align: left;
+	
+
+}
+
+#clrbtn{
+	margin-left: 15px;
+	padding-left:50px;
+	padding-right:100px;
+	width: 100px;
+	
+}
+
+#savebtn{
+	
+	padding-left:50px;
+	padding-right:100px;
+	width: 100px;
+}
+
+
+#imgbtn{
+
+	text-align: center;
+
+}
+
+
+#container{
+	
+	border: 2px solid black;
+	padding: 3px;
+	
+}
+
+#main{
+	border: 2px solid black;
+	margin-left:150px;
+	position: relative;
+	
+	
+	
+}
+
+#topbar{
+	
+	background-color: rgba(0,0,255,0.3);
+	border:2px solid blue;
+	margin-bottom: 10px;
+	
+}
+
+
+#contentsImg{
+	width:115px;
+	margin-left:10px;
+	
+}
+
+
+#imgbtn{
+
+	width: 120px;
+	padding: 10px;
+	margin: 5px;
+
+}
+
+.commentsTitleconfig{
+
+
+	font-family:Helvetica,Arial,sans-serif; 
+	font-size: x-large;
+	color:blueviolet;
+	text-align: center;
+
+
+}
+
+#commentform{
+	margin-left: 25%;
+	background-color: rgba(185, 35, 105, 0.459);
+	padding-top: 10px;
+	padding-left: 12px;
+	padding-bottom: 10px;
+	border: 2px solid rgb(0, 0, 0);
+	width: 360px;
+}
+
+#contents{
+	
+	font-family:Helvetica,Arial,sans-serif; 
+	font-size:small;
+	color:fuchsia;
+	border: 2px solid blue;
+	width: 130px;
+	
+	padding-bottom: 15px;
+	float:left;
+	background-color: rgba(0,255,0,0.2);
+}
+
+
+#intro{
+	margin: 10px;
+	padding: 5px;
+}
+
+
+#prev_exp{
+	margin: 10px;
+}
+
+
+#modules{
+	margin: 10px;
+}
+
+
+#skills{
+	margin: 10px;
+}
+
+
+#useful_links{
+	margin: 10px;
+}
+
+
+#contact{
+	margin: 10px;
+}
+
+
+
+
+#comments{
+	margin: 10px;
+}
+
+
+
+#edited{
+	
+	border: solid pink 2px;
+	text-align: center;
+	
+}
