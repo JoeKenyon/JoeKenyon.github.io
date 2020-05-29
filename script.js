@@ -21,11 +21,9 @@ function ClearTextBox(){
 }
 
 
-
 function addTime()
 {
-	var today = new Date();
-	document.getElementById('editedText').innerHTML=today;
+
 }
 
 
