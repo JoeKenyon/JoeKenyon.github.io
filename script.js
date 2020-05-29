@@ -20,6 +20,15 @@ function ClearTextBox(){
 	
 }
 
+
+
+function addTime()
+{
+	var today = new Date();
+	document.getElementById('editedText').innerHTML=today;
+}
+
+
 function SaveComment(){
 	
 	var time = new Date().toLocaleString();
@@ -55,9 +64,6 @@ function DisplayComments(){
 	 
 	 document.getElementById("commentList").innerHTML = comments;
 }
-
-
-
 
 
 
