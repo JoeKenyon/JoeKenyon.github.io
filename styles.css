@@ -1,170 +1,129 @@
-
-#titleText{
-
-	font-family:Georgia, 'Times New Roman', Times, serif; 
-	font-size:medium;
-	color:rgb(255, 51, 0);
-
+/* Main body and all that shit */
+body, html
+{
+	height: 100%;
 }
 
 
-#commentContainer{
-	padding: 10px;
-	border: 25px;
-	font-size:medium;
-	border-color: blue;
-	
+
+/*
+TOP MENU STUFF
+*/
+.top-menu{
+	height: 100px;
+	margin-top:0px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+    top: 0;
+	overflow-x: hidden;
+    background: #cce5ff;
+	background-color: rgb(255, 0, 128);
+	font-size: 80px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: aqua;
+	border: thick solid rgb(0, 0, 0);
 }
 
-#name{
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	text-shadow: 0 0 3px #FF0000;
-	font-size:xx-large;
-	text-align: left;
-	
-
+/*
+SIDE MENU STUFF
+*/
+.side-menu {
+	height: 100%;
+	margin-top:120px;
+	width: 170px;
+	position: fixed;
+	z-index: 1;
+    top: 0;
+	overflow-x: hidden;
+    background: #cce5ff;
+	background-color: rgb(0,200,50);
+	border: thick solid rgb(0, 0, 0);
 }
 
-#clrbtn{
-	margin-left: 15px;
-	padding-left:50px;
-	padding-right:100px;
-	width: 100px;
-	
-}
-
-#savebtn{
-	
-	padding-left:50px;
-	padding-right:100px;
-	width: 100px;
-}
-
-
-#imgbtn{
-
-	text-align: center;
-
-}
-
-
-#container{
-	
-	border: 2px solid black;
-	padding: 3px;
-	
-}
-
-#main{
-	border: 2px solid black;
-	margin-left:150px;
-	position: relative;
-	
-	
-	
-}
-
-#topbar{
-	
-	background-color: rgba(0,0,255,0.3);
-	border:2px solid blue;
-	margin-bottom: 10px;
-	
-}
-
-
-#contentsImg{
-	width:115px;
-	margin-left:10px;
-	
-}
-
-
-#imgbtn{
-
-	width: 120px;
-	padding: 10px;
-	margin: 5px;
-
-}
-
-.commentsTitleconfig{
-
-
-	font-family:Helvetica,Arial,sans-serif; 
-	font-size: x-large;
-	color:blueviolet;
-	text-align: center;
-
-
-}
-
-#commentform{
-	margin-left: 25%;
-	background-color: rgba(185, 35, 105, 0.459);
-	padding-top: 10px;
-	padding-left: 12px;
+.side-menu .button {
+	width: 170px;
+	height:105px;
+	background-color: rgb(34, 255, 0);
+	border: none;
+	color: white;
+	font-size: 25px;
+	font-family: Verdana, Geneva, sans-serif;
+	padding-left: 40px;
+	padding-right: 40px;
 	padding-bottom: 10px;
-	border: 2px solid rgb(0, 0, 0);
-	width: 360px;
+	padding-top: 10px;
+	border-bottom: thick solid rgb(0, 0, 0);
 }
 
-#contents{
-	
-	font-family:Helvetica,Arial,sans-serif; 
-	font-size:small;
-	color:fuchsia;
-	border: 2px solid blue;
-	width: 130px;
-	
-	padding-bottom: 15px;
-	float:left;
-	background-color: rgba(0,255,0,0.2);
-}
-
-
-#intro{
-	margin: 10px;
-	padding: 5px;
-}
-
-
-#prev_exp{
-	margin: 10px;
-}
-
-
-#modules{
-	margin: 10px;
-}
-
-
-#skills{
-	margin: 10px;
-}
-
-
-#useful_links{
-	margin: 10px;
-}
-
-
-#contact{
-	margin: 10px;
+.side-menu .button:hover {
+    background-color: #3535E4;
 }
 
 
 
 
-#comments{
-	margin: 10px;
+/* BAck ground bullshit */
+.parallax 
+{
+	/* The image used */
+	background-image: url('background_img.jpg');
+
+	/* Full height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Introduction box*/
+.TextBox
+{
+	height: relative;
+	margin-top:25px;
+	margin-left:200px;
+	width: 750px;
+	z-index: 1;
+    top: 0;
+	overflow-x: hidden;
+	background-color: rgb(255, 255, 255);
+	font-size: 25px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: rgb(0, 0, 0);
+}
+
+#Top-Title
+{
+	height: 100px;
+	margin-top:120px;
+	margin-left:175px;
+	width: 100%;
+	z-index: 1;
+    top: 0;
+	overflow-x: hidden;
+	background-color: rgb(255, 0, 128);
+	font-size: 80px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: aqua;
+	border: thick solid rgb(0, 0, 0);
+}
+.Title
+{
+	height: 100px;
+	margin-top:25px;
+	margin-left:175px;
+	width: 100%;
+	z-index: 1;
+    top: 0;
+	overflow-x: hidden;
+	background-color: rgb(255, 0, 128);
+	font-size: 80px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: aqua;
+	border: thick solid rgb(0, 0, 0);
 }
 
 
-
-#edited{
-	
-	border: solid pink 2px;
-	text-align: center;
-	
-}
