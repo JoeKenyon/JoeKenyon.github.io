@@ -5,10 +5,7 @@ body, html
 }
 
 
-
-/*
-TOP MENU STUFF
-*/
+/* code that is here, until the first @media block, will apply to any screen size */
 .top-menu{
 	height: 100px;
 	margin-top:0px;
@@ -24,6 +21,7 @@ TOP MENU STUFF
 	color: aqua;
 	border: thick solid rgb(0, 0, 0);
 }
+
 
 /*
 SIDE MENU STUFF
@@ -43,7 +41,7 @@ SIDE MENU STUFF
 
 .side-menu .button {
 	width: 170px;
-	height:105px;
+	height:102px;
 	background-color: rgb(34, 255, 0);
 	border: none;
 	color: white;
@@ -124,6 +122,91 @@ SIDE MENU STUFF
 	font-family: Verdana, Geneva, sans-serif;
 	color: aqua;
 	border: thick solid rgb(0, 0, 0);
+}
+
+
+/* comes into effect for screens less than or equal to 320 pixels */
+@media screen and (max-width: 320px)
+{
+	.top-menu
+	{
+		height: 100px;
+		margin-top:0px;
+		font-size: 35px;
+	}
+	/*
+	SIDE MENU STUFF
+	*/
+	.side-menu {
+		height: 100%;
+		margin-top:70px;
+		width: 100px;
+	}
+
+	.side-menu .button {
+		width: 170px;
+		height:102px;
+		background-color: rgb(34, 255, 0);
+		border: none;
+		color: white;
+		font-size: 25px;
+		font-family: Verdana, Geneva, sans-serif;
+		padding-right: 40px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		border-bottom: thick solid rgb(0, 0, 0);
+	}
+
+	.side-menu .button:hover {
+		background-color: #3535E4;
+	}
+}
+
+/* comes into effect for screens between 321 and 480 pixels (inclusive) */
+@media screen and (min-width: 321px) and (max-width: 480px) 
+{
+	.top-menu
+	{
+		height: 50px;
+		margin-top:0px;
+		font-size: 35px;
+	}
+
+	#Top-Title
+	{
+		height: 50px;
+		margin-top:70px;
+		margin-left:125px;
+		font-size: 30px;
+	}
+
+	/*
+	SIDE MENU STUFF
+	*/
+	.side-menu {
+		height: 100%;
+		margin-top:70px;
+		width: 100px;
+	}
+
+	.side-menu .button {
+		width: 175px;
+		height:50px;
+		background-color: rgb(34, 255, 0);
+		border: none;
+		color: white;
+		font-size: 25px;
+		font-family: Verdana, Geneva, sans-serif;
+		padding-left: 10px;
+		padding-right: 100px;
+		padding-bottom: 0px;
+		padding-top: 0px;
+		border-bottom: thick solid rgb(0, 0, 0);
+	}
+
+	.side-menu .button:hover {
+		background-color: #3535E4;
+	}
 }
 
 
