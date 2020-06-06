@@ -8,20 +8,24 @@
 	<script src="p5.min.js"></script>
 	<script src="p5.dom.min.js"></script>
 	<script src="sketch.js"></script>
-	<title>PENIS [HOME]</title>
+	<title>[E|X|T|R|A]</title>
 	<meta name="viewport" content="width=1024">
 	<style>
         #canvasContainer
 		{
-			margin-top:120px;
-			margin-left:185px;
-			width: 750px;
+			height:relative;
+			width: relative;
 			z-index: 1;
 			top: 0;
+			font-size: 25px;
+			font-family: Verdana, Geneva, sans-serif;
+			color: rgb(255, 255, 255);
+
+			display: table;
 			overflow-x: hidden;
-			background: #cce5ff;
-			border: thick solid rgb(0, 0, 0);
-			font-size: xx-large;
+			display: table;
+			margin: 0 auto;
+			padding: 10px;
 		}
     </style>
 
@@ -32,23 +36,32 @@
 
 
 <div class="top-menu">
+<a href = "index.htm"><button class="button">Home</button></a>
+<a href = "contact.htm"><button class="button">Contact</button></a>
+<a href = "projects.htm"><button class="button">Projects</button></a>
+<a href = "draw.htm"><button class="button">Extra</button></a>
 J O E K E N Y O N
 </div>
 
+
+
+
+<div class="parallax">
+<div class="parallax-curtain">
+</div>
+</div>
+
+<div class="parallax2">
+<div class="parallax-curtain">
+
+<div id="Top-Title">
+Created using p5.js
+</div>
 <div id="canvasContainer">
-Drawing is fun!
 </div>
 
-
-
-<div class="side-menu">
-<a href = "index.htm"><button class="button">Home</button></a>
-<a href = "contact.htm"><button class="button">Contact</button></a>
-<a href = "draw.htm"><button class="button">Draw</button></a>
-
 </div>
-
-
+</div>
 
 
 </body>
