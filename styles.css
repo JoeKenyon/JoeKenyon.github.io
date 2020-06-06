@@ -7,55 +7,41 @@ body, html
 
 /* code that is here, until the first @media block, will apply to any screen size */
 .top-menu{
-	height: 100px;
+	
+	height:relative;
 	margin-top:0px;
-	width: 100%;
+	width: relative;
 	position: fixed;
-	z-index: 1;
-    top: 0;
+	z-index: 2;
+    top: 2;
 	overflow-x: hidden;
-    background: #cce5ff;
-	background-color: rgb(255, 0, 128);
-	font-size: 80px;
+	font-size: 25px;
 	font-family: Verdana, Geneva, sans-serif;
-	color: aqua;
-	border: thick solid rgb(0, 0, 0);
-}
-
-
-/*
-SIDE MENU STUFF
-*/
-.side-menu {
-	height: 100%;
-	margin-top:120px;
-	width: 170px;
-	position: fixed;
-	z-index: 1;
-    top: 0;
-	overflow-x: hidden;
-    background: #005ec3;
-	background-color: rgba(255, 0, 0, 0.605);
-	border: thick solid rgb(0, 0, 0);
-}
-
-.side-menu .button {
-	width: 170px;
-	height:104px;
-	background-color: rgb(255, 0, 128);
-	border: none;
-	color: aqua;
-	font-size: 40px;
-	font-family: Verdana, Geneva, sans-serif;
-	padding-left: 5px;
-	padding-right: 40px;
-	padding-bottom: 10px;
-	padding-top: 10px;
+	color: rgb(255, 255, 255);
+	border-top: thick solid rgb(0, 0, 0);
 	border-bottom: thick solid rgb(0, 0, 0);
+    top: 5.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);	
 }
 
-.side-menu .button:hover {
-    background-color: rgb(0, 255, 238);
+.top-menu .button {
+	width: relative;
+	height:relative;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	font-family: "Lucida Sans Unicode";
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+
+}
+
+.top-menu .button:hover {
+    background-color: rgba(255, 255, 255, 0.404)
 }
 
 
@@ -63,8 +49,8 @@ SIDE MENU STUFF
 .parallax 
 {
 	/* The image used */
-    background:rgba(255,255,255,0.5);
-    background-image: url('background_img.jpg');
+    background:rgba(255, 0, 0, 0.5);
+    background-image: url('nebula.jpg');
     height: relative; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -73,8 +59,25 @@ SIDE MENU STUFF
 	background-size: cover;
 	
     /* Create the parallax scrolling effect */
-    height:400%;
-    padding-top:10px;
+    height:14%;
+    padding-top:0px;
+}
+
+.parallax2 
+{
+	/* The image used */
+    background:rgb(0, 0, 0);
+    background-image: url('nebula.jpg');
+    height: relative; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	
+    /* Create the parallax scrolling effect */
+    height:200%;
+    padding-top:0px;
 }
 
 .parallax-curtain{
@@ -84,67 +87,103 @@ SIDE MENU STUFF
 /* Introduction box*/
 .TextBox
 {
-	height: relative;
-	margin-top:10px;
-	margin-left:200px;
-	padding: 5px;
-	width: 75vh;
+	height:relative;
+	width: 500px;
 	z-index: 1;
-    top: 0;
-	overflow-x: hidden;
-	background-color: rgba(255, 0, 0, 0.605);
+	top: 0;
 	font-size: 25px;
 	font-family: Verdana, Geneva, sans-serif;
-	color: rgb(0, 0, 0);
-	border: thick solid rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+
+	
+	display: table;
+	overflow-x: hidden;
+	display: table;
+	margin: 0 auto;
+	margin-top:10px;
+	padding: 10px;
+}
+
+#progressbar
+{
+	background-color: rgba(0, 0, 0, 0.596);
+	border-radius: 13px;
+	padding: 3px;
+}
+  
+#progressbar>div
+{
+	background-color: rgb(89, 0, 255);
+	width: 40%;
+	height: 20px;
+	border-radius: 10px;
+}
+
+#INTRO
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: thick solid rgb(0, 0, 0);
+	border-bottom: thick solid rgb(0, 0, 0);
+}
+
+#SKILLS
+{
+	margin-top: 10px;
+	border-top: thick solid rgb(0, 0, 0);
+	border-bottom: thick solid rgb(0, 0, 0);
 }
 
 .SkillBox
 {
-	height: relative;
-	margin-top:10px;
-	margin-left:200px;
-	padding: 5px;
-	width: 75vh;
+	height:relative;
+	width: 500px;
 	z-index: 1;
-    top: 0;
-	overflow-x: hidden;
-	background-color: rgba(255, 0, 0, 0.605);
-	font-size: 50px;
+	top: 0;
+	font-size: 25px;
 	font-family: Verdana, Geneva, sans-serif;
-	color: rgb(0, 0, 0);
-	border: thick solid rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+
+	
+	display: table;
+	overflow-x: hidden;
+	display: table;
+	margin: 0 auto;
+	margin-top:10px;
 }
 
 #Top-Title
 {
-	height: 100px;
-	margin-top:103px;
-	margin-left:200px;
-	padding: 5px;
-	width: 75vh;
+	height:relative;
+	width: 500px;
 	z-index: 1;
-    top: 0;
-	overflow-x: hidden;
-	background-color: rgb(255, 0, 128);
-	font-size: 80px;
+	top: 0;
+	font-size: 25px;
 	font-family: Verdana, Geneva, sans-serif;
-	color: aqua;
-	border: thick solid rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	border-top: thick solid rgb(0, 0, 0);
+	border-bottom: thick solid rgb(0, 0, 0);
+	display: table;
+	overflow-x: hidden;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
 }
 .Title
 {
-	height: 100px;
-	margin-top:10px;
-	margin-left:200px;
-	padding: 5px;
-	width: 75vh;
+	height:relative;
+	width: 500px;
 	z-index: 1;
-    top: 0;
-	overflow-x: hidden;
-	background-color: rgb(255, 0, 128);
-	font-size: 80px;
+	top: 0;
+	font-size: 25px;
 	font-family: Verdana, Geneva, sans-serif;
-	color: aqua;
-	border: thick solid rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	border-top: thick solid rgb(0, 0, 0);
+	border-bottom: thick solid rgb(0, 0, 0);
+	display: table;
+	overflow-x: hidden;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 10px;
 }
