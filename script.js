@@ -61,7 +61,7 @@ function PROJECTS_onLoad()
         var lang = json_obj[i].language;
         var desc = json_obj[i].description;
 
-        if(desc.length <= 1)
+        if(desc == null)
         {
             desc = "N/A";
         }
