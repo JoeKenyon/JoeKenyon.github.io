@@ -1,49 +1,286 @@
-<!DOCTYPE html>
 <html>
 
-
 <head>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="progress.css">
-<script src="script.js"></script>
-<title>[P|R|O|J|E|C|T|S] test</title>
-<meta name="viewport" content="width=1024">
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>PENIS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ </head>
+ 
+<body onLoad="intialize()">
+
+<script>
+
+function intialize()
+{
+	loadProjects();
+}
+
+function getJSONDATA(yourUrl)
+{
+    var Httpreq = new XMLHttpRequest();
+    Httpreq.open("GET",yourUrl,false);
+    Httpreq.send(null);
+    return Httpreq.responseText;          
+}
+
+function loadProjects()
+{
+    // div to add to
+    var main_body = document.getElementById("main");
+
+    var api_url = "https://api.github.com/users/JoeBoiii72/repos?"
+
+    var json_obj = JSON.parse(getJSONDATA(api_url));
+
+    for(i in json_obj)
+    {
+        var name = json_obj[i].name;
+        var lang = json_obj[i].language;
+        var desc = json_obj[i].description;
+
+        if(desc == null)
+        {
+            desc = "N/A";
+        }
+        
+        // create <div class="content-box">
+        var contentBox = document.createElement("div");
+        contentBox.className = "content-box";
+
+        // create <h2 class="contentTitle">[ lang ] projectName</h2>
+        var project_title = document.createElement('H2');
+        project_title.className = "contentTitle";
+        project_title.innerHTML = "[ "+lang+" ] "+ name;
+        contentBox.appendChild(project_title);
+        
+        // create <p class="contentText">
+        var descText = document.createElement("p");
+        descText.className = "contentText";
+        descText.innerHTML = desc;
+        contentBox.appendChild(descText);
+
+        main_body.appendChild(contentBox); 
+    }
+}
+</script>
+	
+  
+<style>
+
+@font-face
+{
+	font-family: "Empires";
+	src: url("fonts/Empires.otf");
+}
+
+@font-face
+{
+	font-family: "WallHunterDemo";
+	src: url("fonts/WallHunterDemo.ttf");
+}
+
+@font-face
+{
+	font-family: "Jacksilver";
+	src: url("fonts/Jacksilver.ttf");
+}
+
+@font-face
+{
+	font-family: "SisterSpray";
+	src: url("fonts/SisterSpray.ttf");
+}
+
+@font-face
+{
+	font-family: "Dolce Vita";
+	src: url("fonts/Dolce Vita.ttf");
+}
+
+@font-face
+{
+	font-family: "Dolce Vita Heavy Bold";
+	src: url("fonts/Dolce Vita Heavy Bold.ttf");
+}
+
+@font-face
+{
+	font-family: "GeosansLight";
+	src: url("fonts/GeosansLight.ttf");
+}
+
+@font-face
+{
+	font-family: "Simple Print";
+	src: url("fonts/Simple Print.ttf");
+}
+
+body
+{
+  background:#eee;
+  font-family: "GeosansLight";
+  color: #222;  
+}
+
+#main
+{
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%; 
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+#nav-bar
+{
+	list-style-type: none;
+	border-radius: 2px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	font-family: Dolce Vita Heavy Bold;
+	font-size: 20px;
+	color: #333;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: #111;
+  color: white;
+}
+
+.content-box {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  margin-top: 1em;
+  background:white;
+  padding:1em;
+}
+
+.content-box a
+{
+	text-decoration: none;
+	color: #111;
+}
+
+.content-box a:hover
+{
+	text-decoration: none;
+	color: #eee;
+	box-shadow: 1 3px 2px #111;
+}
+
+.contentText
+{
+  margin-bottom: 0; 
+  font-size: 27px;
+}
+
+.contentTitle
+{
+	font-family: Dolce Vita Heavy Bold;
+	margin-top: 0;
+}
+
+#background {
+  z-index:-1;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-size: 20vw;
+  background-image: url("images/nebula.jpg");
+}
+
+#logo {
+  text-align: center;
+  font-size: 10vw;
+  font-family: Empires;
+  color: white;
+  text-shadow: 5px 5px 5px #444;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em; 
+}
 
 
-<body onload="PROJECTS_onLoad()">
+@media only screen and (max-width: 850px) {
+	#logo
+	{
+		font-size: 10.5vw;
+	}
+
+	.container
+	{
+		width: relative;
+		height: relative;
+		background-color: rgba(0, 0, 0, 0.0);
+	}
+
+	.menu-box
+	{
+		font-size: 10px;
+		box-shadow: 2 50px 10px rgba(0, 0, 0, 0.5);
+		border-radius: 2px;
+		background:white;
+		width: relative;
+		height: 35px;;
+		text-align: center;
+		padding:1;
+		margin-bottom: 10px;
+	}
+}
+</style>
+  
+<div id="background">
+</div>
+
+<div id="main">
+
+<p id="logo">joe kenyon</p>
+
+<ul id="nav-bar">
+  <li class="nav-item"><a href = "index.htm">Home</a></li>
+  <li class="nav-item"><a href = "home.htm">Project</a></li>
+  <li class="nav-item"><a href = "contact.htm">Contact</a></li>
+  <li class="nav-item"><a href = "home.htm">Extra</a></li>
+</ul>
 
 
-<div class="top-menu">
-<a href = "index.htm"><button class="button">Home</button></a>
-<a href = "contact.htm"><button class="button">Contact</button></a>
-<a href = "projects.htm"><button class="button">Projects</button></a>
-<a href = "draw.htm"><button class="button">Extra</button></a>
-J O E K E N Y O N
+
+
+<div class="content-box">
+<h1 class="contentTitle">Projects</h1>
+<hr style="margin-top: 1.25rem;">
+<p class="contentText">
+Here is a list of projects ive been working on.
+Some of them are finished, some however, are not.
+</p>
+</div> 
+
+<div class="content-box">
+<h2 class="contentTitle">
+[ lang ] projectName 
+</h2>
+<hr style="margin-top: 1.25rem;">
+<p class="contentText">
+text_of_project
+</p>
 </div>
 
 
-
-
-<div class="parallax">
-<div class="parallax-curtain">
-</div>
-</div>
-
-<div class="parallax2">
-<div class="parallax-curtain">
-
-
-<div id="Top-Title">
-PROJECTS
-</div>
-
-<div id="PROJECTS">
-
-
-</div>
-
-
-</div>
 </body>
 </html>
