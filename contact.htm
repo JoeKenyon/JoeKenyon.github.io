@@ -1,60 +1,277 @@
-<!DOCTYPE html>
 <html>
 
-
 <head>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="progress.css">
-<script src="script.js"></script>
-<title>[C|O|N|T|A|C|T]</title>
-<meta name="viewport" content="width=1024">
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>PENIS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ </head>
+ 
+<body onLoad="intialize()">
+
+<script>
+
+function intialize()
+{
+	//something();
+}
+
+function something()
+{
+	var progress =
+	{
+		"C": "55",
+		"Java": "75",
+		"C++": "65",
+		"Python": "70",
+		"STM32": "35",
+		"SQL": "35",
+		"ARMv7": "45",
+		"Linux": "45",
+		"Java AWT": "40",
+		"Java Swing": "40",
+		"Visual Studio": "45",
+		"Git": "57",
+		"Flask": "35",
+		"InteliJ": "60",
+		"Clion": "60",
+	};
+
+	var skills = document.getElementById("Skills");
+
+	for(key in progress)
+	{
+	/*
+		var lang = key;
+		var percent = progress[key];
+		var skillbox = document.createElement("div");
+		skillbox.className = "SkillBox";
+		skillbox.innerHTML = lang;
+		var barOuter = document.createElement("div");
+		var barInner = document.createElement("div");
+		barOuter.id = "progressbar";
+		barInner.setAttribute("style","width:"+percent+"%");
+		barOuter.appendChild(barInner);
+		skillbox.appendChild(barOuter);*/
+		
+	}
+}
+</script>
+	
+  
+<style>
+
+@font-face
+{
+	font-family: "Empires";
+	src: url("fonts/Empires.otf");
+}
+
+@font-face
+{
+	font-family: "WallHunterDemo";
+	src: url("fonts/WallHunterDemo.ttf");
+}
+
+@font-face
+{
+	font-family: "Jacksilver";
+	src: url("fonts/Jacksilver.ttf");
+}
+
+@font-face
+{
+	font-family: "SisterSpray";
+	src: url("fonts/SisterSpray.ttf");
+}
+
+@font-face
+{
+	font-family: "Dolce Vita";
+	src: url("fonts/Dolce Vita.ttf");
+}
+
+@font-face
+{
+	font-family: "Dolce Vita Heavy Bold";
+	src: url("fonts/Dolce Vita Heavy Bold.ttf");
+}
+
+@font-face
+{
+	font-family: "GeosansLight";
+	src: url("fonts/GeosansLight.ttf");
+}
+
+@font-face
+{
+	font-family: "Simple Print";
+	src: url("fonts/Simple Print.ttf");
+}
+
+body
+{
+  background:#eee;
+  font-family: "GeosansLight";
+  color: #222;  
+}
+
+#main
+{
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%; 
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+#nav-bar
+{
+	list-style-type: none;
+	border-radius: 2px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	font-family: Dolce Vita Heavy Bold;
+	font-size: 20px;
+	color: #333;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: #111;
+  color: white;
+}
+
+.content-box {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  margin-top: 1em;
+  background:white;
+  padding:1em;
+}
+
+.content-box a
+{
+	text-decoration: none;
+	color: #111;
+}
+
+.content-box a:hover
+{
+	text-decoration: none;
+	color: #eee;
+	box-shadow: 1 3px 2px #111;
+}
+
+.contentText
+{
+  margin-bottom: 0; 
+  font-size: 27px;
+}
+
+.contentTitle
+{
+	font-family: Dolce Vita Heavy Bold;
+	margin-top: 0;
+}
+
+#background {
+  z-index:-1;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-size: 20vw;
+  background-image: url("images/nebula.jpg");
+}
+
+#logo {
+  text-align: center;
+  font-size: 10vw;
+  font-family: Empires;
+  color: white;
+  text-shadow: 5px 5px 5px #444;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em; 
+}
 
 
-<body>
+@media only screen and (max-width: 850px) {
+	#logo
+	{
+		font-size: 10.5vw;
+	}
 
+	.container
+	{
+		width: relative;
+		height: relative;
+		background-color: rgba(0, 0, 0, 0.0);
+	}
 
-<div class="top-menu">
-<a href = "index.htm"><button class="button">Home</button></a>
-<a href = "contact.htm"><button class="button">Contact</button></a>
-<a href = "projects.htm"><button class="button">Projects</button></a>
-<a href = "draw.htm"><button class="button">Extra</button></a>
-J O E K E N Y O N
+	.menu-box
+	{
+		font-size: 10px;
+		box-shadow: 2 50px 10px rgba(0, 0, 0, 0.5);
+		border-radius: 2px;
+		background:white;
+		width: relative;
+		height: 35px;;
+		text-align: center;
+		padding:1;
+		margin-bottom: 10px;
+	}
+}
+</style>
+  
+<div id="background">
 </div>
 
+<div id="main">
+
+<p id="logo">joe kenyon</p>
+
+<ul id="nav-bar">
+  <li class="nav-item"><a href = "index.htm">Home</a></li>
+  <li class="nav-item"><a href = "home.htm">Project</a></li>
+  <li class="nav-item"><a href = "contact.htm">Contact</a></li>
+  <li class="nav-item"><a href = "home.htm">Extra</a></li>
+</ul>
 
 
 
-<div class="parallax">
-<div class="parallax-curtain">
-</div>
-</div>
 
-<div class="parallax2">
-<div class="parallax-curtain">
-
-
-<div id="Top-Title">
-Contacts
-</div>
-<div id="CONTACTS">
-
-<div class="contact">
+<div class="content-box" id="Skills">
+<h1 class="contentTitle">Contact details</h1>
+<hr style="margin-top: 1.25rem;">
+<p class="contentText">
+Contact me here!
+<p class="contentText">
 <a href="https://github.com/JoeBoiii72">GitHub</a>
-</div>
-<div class="contact">
- <a href="https://twitter.com/JoeBoiii_72">Twitter</a>
-</div>
-<div class="contact">
+<br><br>
+<a href="https://twitter.com/JoeBoiii_72">Twitter</a>
+<br><br>
 <a href="https://www.youtube.com/channel/UCSGXFkjFaYVaw5ZTJaNpLNg">Youtubes</a>
-</div>
-<div class="contact">
+<br><br>
 <a href="mailto:joekenyon72@gmail.com">joekenyon72@gmail.com</a>
-</div>
+</p>
+<hr style="margin-top: 1.25rem;">
 
-</div>
 
-
-</div>
+</div> 
 </body>
 </html>
