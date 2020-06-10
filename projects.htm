@@ -40,10 +40,11 @@ function loadProjects()
         var desc = json_obj[i].description;
 
         if(desc == null)
-        {
             desc = "N/A";
-        }
         
+        if(lang == null)
+            continue;
+
         // create <div class="content-box">
         var contentBox = document.createElement("div");
         contentBox.className = "content-box";
@@ -53,6 +54,11 @@ function loadProjects()
         project_title.className = "contentTitle";
         project_title.innerHTML = "[ "+lang+" ] "+ name;
         contentBox.appendChild(project_title);
+
+        // create that weird line thing
+        var line = document.createElement("hr");
+        line.style = "margin-top: 1.25rem;";
+        contentBox.appendChild(line);
         
         // create <p class="contentText">
         var descText = document.createElement("p");
@@ -254,9 +260,9 @@ body
 
 <ul id="nav-bar">
   <li class="nav-item"><a href = "index.htm">Home</a></li>
-  <li class="nav-item"><a href = "home.htm">Project</a></li>
+  <li class="nav-item"><a href = "projects.htm">Projects</a></li>
   <li class="nav-item"><a href = "contact.htm">Contact</a></li>
-  <li class="nav-item"><a href = "home.htm">Extra</a></li>
+  <li class="nav-item"><a href = "index.htm">Extra</a></li>
 </ul>
 
 
@@ -271,14 +277,7 @@ Some of them are finished, some however, are not.
 </p>
 </div> 
 
-<div class="content-box">
-<h2 class="contentTitle">
-[ lang ] projectName 
-</h2>
-<hr style="margin-top: 1.25rem;">
-<p class="contentText">
-text_of_project
-</p>
+
 </div>
 
 
