@@ -83,7 +83,7 @@ body
   bottom:0;
   background-color: #fb89b5;
   background-image: url("images/joe1.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: auto;
 }
 
@@ -172,5 +172,60 @@ body
   {
     font-size: 14px;
     font-style: bold;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+	#logo
+	{
+		font-size: 100px;
+	}
+
+	.container
+	{
+		width: relative;
+		height: relative;
+		background-color: rgba(0, 0, 0, 0.0);
+  }
+
+  .contentTitle
+  {
+    font-size: 13px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .contentText
+  {
+    margin-bottom: 0; 
+    font-size: 11px;
+  }
+
+	.menu-box
+	{
+		font-size: 10px;
+		box-shadow: 2 50px 10px rgba(0, 0, 0, 0.5);
+		border-radius: 2px;
+		background:white;
+		width: relative;
+		height: 35px;
+		text-align: center;
+		padding:1;
+		margin-bottom: 10px;
+  }
+  
+  #nav-bar
+  {
+    font-size: 14px;
+    font-style: bold;
+  }
+
+  .nav-item a {
+    display: block;
+    color: #1E1E24;
+    text-align: center;
+    padding: 5px 3px;
+    text-decoration: none;
+    border: solid white;
   }
 }
