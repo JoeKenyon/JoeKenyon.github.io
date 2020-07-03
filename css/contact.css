@@ -1,0 +1,28 @@
+
+.contentText a:link
+{
+    color: 0;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px black;
+}
+
+.contentText a:visited
+{
+    color: 0;
+    text-decoration: none;
+}
+  
+
+.contentText a:hover
+{
+    text-decoration: none;
+    background-color: rgb(0, 60, 255);
+    color: white;
+}
+  
+
+.contentText a:active
+{
+    color: 0;
+    text-decoration: none;
+}
