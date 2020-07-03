@@ -3,9 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 <title>Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- </head>
+</head>
  
 <body onLoad="intialize()">
 
@@ -14,211 +15,12 @@ function intialize()
 {
 	//something();
 }
-
-var x = document.getElementById("myAudio"); 
-
-function playAudio() { 
-  x.play(); 
-  console.log("sadfdsa");
-} 
-
-function pauseAudio() { 
-  x.pause(); 
-} 
 </script>
-	
-  
-<style>
-
-@font-face
-{
-	font-family: "Empires";
-	src: url("fonts/Empires.otf");
-}
-
-@font-face
-{
-	font-family: "WallHunterDemo";
-	src: url("fonts/WallHunterDemo.ttf");
-}
-
-@font-face
-{
-	font-family: "Jacksilver";
-	src: url("fonts/Jacksilver.ttf");
-}
-
-@font-face
-{
-	font-family: "SisterSpray";
-	src: url("fonts/SisterSpray.ttf");
-}
-
-@font-face
-{
-	font-family: "Dolce Vita";
-	src: url("fonts/Dolce Vita.ttf");
-}
-
-@font-face
-{
-	font-family: "Dolce Vita Heavy Bold";
-	src: url("fonts/Dolce Vita Heavy Bold.ttf");
-}
-
-@font-face
-{
-	font-family: "GeosansLight";
-	src: url("fonts/GeosansLight.ttf");
-}
-
-@font-face
-{
-	font-family: "Simple Print";
-	src: url("fonts/Simple Print.ttf");
-}
-
-body
-{
-  background:#eee;
-  font-family: "GeosansLight";
-  color: #222;  
-}
-
-#main
-{
-  margin: 0 auto;
-  max-width: 800px;
-  width: 100%; 
-  padding: 1em;
-  box-sizing: border-box;
-}
-
-#nav-bar
-{
-	list-style-type: none;
-	border-radius: 2px;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: white;
-	font-family: Dolce Vita Heavy Bold;
-	font-size: 20px;
-	color: #333;
-}
-
-.nav-item {
-  float: left;
-}
-
-.nav-item a {
-  display: block;
-  color: #333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav-item a:hover {
-  background-color: #111;
-  color: white;
-}
-
-.content-box {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
-  margin-top: 1em;
-  background:white;
-  padding:1em;
-}
-
-.contentText
-{
-  margin-bottom: 0; 
-  font-size: 27px;
-}
-
-.contentTitle
-{
-	font-family: Dolce Vita Heavy Bold;
-	margin-top: 0;
-}
-
-#background {
-  z-index:-1;
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-size: 20vw;
-  background-image: url("images/nebula.jpg");
-}
-
-#logo {
-  text-align: center;
-  font-size: 10vw;
-  font-family: Empires;
-  color: white;
-  text-shadow: 5px 5px 5px #444;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em; 
-}
-
-#picture1
-{
-	background-color: blueviolet;
-	font-family: "WallHunterDemo";
-	text-align: center;
-	font-size: 75px;
-	color: white;
-	text-shadow: 5px 5px 5px #444;
-	height: relative;
-	width: relative;
-	background-image: url("images/rugrats.png");
-}
-
-#companyName
-{
-	font-size: 50px;
-	font-family: "Arial";
-}
-
-@media only screen and (max-width: 850px) {
-	#logo
-	{
-		font-size: 10.5vw;
-	}
-
-	.container
-	{
-		width: relative;
-		height: relative;
-		background-color: rgba(0, 0, 0, 0.0);
-	}
-
-	.menu-box
-	{
-		font-size: 10px;
-		box-shadow: 2 50px 10px rgba(0, 0, 0, 0.5);
-		border-radius: 2px;
-		background:white;
-		width: relative;
-		height: 35px;
-		text-align: center;
-		padding:1;
-		margin-bottom: 10px;
-	}
-}
-</style>
   
 <div id="background">
 </div>
 
 <div id="main">
-
-
-
 
 <p id="logo">joe kenyon</p>
 
@@ -232,18 +34,14 @@ body
 
 
 <div class="content-box">
-<p class="contentText">
-Hello, if you couldn't tell by the huge title at the
-top of the page, my name is <b>Joe Kenyon</b>.
+<p class="contentText" style="margin-top: 0;">
+Hello, if you couldn't tell by the huge title at the top of the page, my name is Joe Kenyon.
 <br><br>
-Welcome to my website, this is currently a work 
-in progress, like most things in life.
+Welcome to my website, this is currently a work in progress, like most things in life.
 <br><br>
 I bet you think this site is cool, well think again. It's not.
 </p>
-<br>
 </div>
-
 
 
 <div class="content-box">
@@ -254,19 +52,16 @@ I am the Co-founder of
 </div>
 
 
-
-
 <div class="content-box">
 <p class="contentText"style="margin-top: 1px;">
 What is this picture i hear you ask?
 <br><br>
 No idea, i just thought it looked cool.
 </p>
-<div class="content-box" id="picture1"style="margin-top: 1.25rem;">
+<div id="picture1"style="margin-top: 1.25rem;">
 H e l l o ,  w O r L d
 </div>
 </div>
-
 
 
 
