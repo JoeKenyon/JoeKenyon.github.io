@@ -17,13 +17,17 @@ body
 {
 	object-fit: contain;
 	max-height: 90vh;
-} 
-
+	box-shadow: 0px 0px rgba(0,0,0,0.80);
+	border: solid black 0px;
+	margin-bottom: 0px;
+	margin-top: 30px;
+	background-color: transparent;
+}
 
 .content-box
 {
-	box-shadow: 0px 0px rgba(0,0,0,0.80);
-	border: solid black 0px;
+	box-shadow: 2px 2px rgba(0,0,0,0.80);
+	border: solid black 1px;
 	margin-bottom: 30px;
 	margin-top: 30px;
 	padding: 5px;
@@ -36,6 +40,11 @@ body
 	box-shadow: 2px 2px rgba(0,0,0,0.80);
 	width: 100%;
 	background-color: transparent;
+	
+}
+.art:hover
+{
+	cursor: pointer;
 }
 
 #background
@@ -46,9 +55,26 @@ body
 	left:0;
 	right:0;
 	bottom:0;
-	background-color: #F4EBD0;
+	background-color: white;
 }
 
+#back_btn
+{
+	max-width: 50vh;
+	margin: 0px;
+	background-color: white;
+}
+#back_btn:hover
+{
+	opacity: 0.85;
+	border: solid Violet 2px;
+	cursor: pointer;
+}
+#art_img
+{
+	width: 95%;
+	margin: 0px;
+}
 #cur_img
 {
 	z-index:-2;
@@ -57,7 +83,7 @@ body
 	left:0;
 	right:0;
 	bottom:0;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(0,0,0,0.4);
 }
 
 #logo
@@ -76,7 +102,7 @@ body
     
 #mlink:hover
 {
-    color: #f485e2;
+    color: Violet;
 }
 
 .row {
@@ -100,6 +126,6 @@ body
 }
 
 .column img:hover {
-	opacity: 1;
-	border: solid #f485e2; 2px;
+	opacity: 0.85;
+	border: solid Violet 2px;
 }

@@ -27,54 +27,23 @@ var art_pics =
 	"/images/20231208_213655-1.png",
 	"/images/20240417_195356.jpg",
 	"/images/unknown.png",
-	"/images/Your_paragraph_text_2.png"
+	"/images/Your_paragraph_text_2.png",
+	"/images/SDC11344.JPG",
+	"/images/SDC11347.JPG",
+	"/images/SDC11193.JPG"
 ];
 
 
 var path = document.location.pathname;
 var working_dir = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
 
-
-
 function img_clk(img_ref)
 {
+	// show the thing
 	document.getElementById("cur_img").style.zIndex = "1"
-
-	var expandImgDiv = document.getElementById("poenis");
 	
-	var img = document.createElement('img'); // Make a new image.
-		
-	img.src = img_ref.src;
-	
-	if(img_ref.width >= img_ref.height)
-	{
-		img.style.width = "100%";
-	}
-	else
-	{
-		img.style.width = "100%";
-	}
-		
-		
-	expandImgDiv.appendChild(img);
-	
-	var btn = document.createElement("BUTTON"); // Make a new image.
-	
-	btn.onclick = function ()
-	{ 
-		document.getElementById("cur_img").style.zIndex = "-2"
-		var expandImgDiv = document.getElementById("poenis");
-		expandImgDiv.innerHTML = "";
-	}
-	btn.innerText = "X"
-	btn.style.width = "25px";
-	btn.style.height = "25px";
-	
-	expandImgDiv.appendChild(btn);
-	
-	// add listener
-	
-	//
+	var expandedImg = document.getElementById("art_img");
+	expandedImg.src = img_ref.src;
 }
 
 function set_up()
@@ -87,18 +56,20 @@ function set_up()
 		img.onclick = function () { img_clk(this);}
 		
 		var a = document.createElement('a'); // Make a new anchor.
+		
 		//a.href = img.src; // Point it at the image source.
 		//a.target = "_blank"
 		
 		a.appendChild(img); // Make the image a child of the anchor.
-		
-		//document.getElementById("main").appendChild(a);
-		
+				
 		var cols = document.getElementsByClassName("column"); // get the collums, should be 3
 		
 		cols[i%cols.length].appendChild(a);
 	}
 	
+	document.getElementById("back_btn").onclick = function () { document.getElementById("cur_img").style.zIndex = "-2" }
+	//document.getElementById("cur_img").onclick = function () { document.getElementById("cur_img").style.zIndex = "-2" }
+	//document.getElementById("poenis").onclick = function () { document.getElementById("cur_img").style.zIndex = "-2" }
 }
 
 window.onload = set_up
